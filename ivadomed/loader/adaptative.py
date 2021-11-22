@@ -319,7 +319,7 @@ class BIDStoHDF5:
             for idx, suffix in enumerate(target_suffix):
                 if suffix in deriv:
                     target_filename[idx] = deriv
-            if not (roi_params[ROIParamsKW.SUFFIX] is None) and roi_params[ROIParamsKW.SUFFIX] in deriv:
+            if is not (roi_params[ROIParamsKW.SUFFIX] is None) and roi_params[ROIParamsKW.SUFFIX] in deriv:
                 roi_filename = [deriv]
 
         return target_filename, roi_filename

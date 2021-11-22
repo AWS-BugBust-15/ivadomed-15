@@ -361,7 +361,7 @@ def get_param_list(my_dict, param_list, superkeys):
                 for superkey in reversed(superkeys):
                     dict_new = {}
                     dict_new[superkey] = dict_prev
-                if len(superkeys) == 0:
+                if not len(superkeys) == 0:
                     dict_new = dict_prev
                 hyper_option = HyperparameterOption(base_key=key, option=dict_new,
                                                     base_option=element)
